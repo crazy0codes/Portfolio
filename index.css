@@ -5,11 +5,18 @@
 }
 .navbar {
     display: flex;
-    align-items: flex-start;
-    margin-left: 20px;
+    height: 30px;
+    justify-content: left;
+    align-items: center;
     position: sticky;
     top: 0;
+    color: white;
+    background-color: black;
 }
 header {
     font-size: 23px;
+}
+.nav-item {
+    margin-left: 50px;
+    font-weight: 570;
 }
