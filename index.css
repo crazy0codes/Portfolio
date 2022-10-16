@@ -7,7 +7,6 @@
     scroll-behavior: smooth;
 }
 body {
-    height: 1000vh;
     background-color: rgb(255, 255, 255);
 }
 .nav {
@@ -52,10 +51,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:30px;
+    margin-left: 20px;
+    flex-wrap: nowrap;
 }
 .text {
-    width: 700px;
+    width: 100%;
     margin-right: 20px;
 }
 .notes {
@@ -102,5 +102,17 @@ body {
         width: 100%;
         display: flex;
         justify-content:space-evenly;
+    }
+}
+@media screen and (max-width:757px){
+    .About {
+        flex-direction: column-reverse;
+    }
+    .man-icon {
+        margin: 50px;
+        width: 50%;
+    }
+    .projects {
+        margin-top: 100px;
     }
 }
