@@ -25,7 +25,9 @@ header {
     display: flex;
 }
 .nav-item:hover {
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(0, 255, 0);
 }
 img {
     width: 100px;
@@ -37,4 +39,14 @@ img {
 }
 .nav-item {
     padding: 20px;
+    font-weight: 500;
+}
+span {
+    color: rgb(255, 22, 22);
+}
+.nav-item:active {
+    color: red;
+}
+nav {
+    border-bottom: 2px solid white;
 }
