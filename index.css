@@ -47,6 +47,6 @@ span {
 .nav-item:active {
     color: red;
 }
-nav {
-    border-bottom: 2px solid white;
+a {
+    text-decoration: none;
 }
