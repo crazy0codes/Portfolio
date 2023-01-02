@@ -18,7 +18,7 @@ body {
     align-items: center;
     background-color: rgb(255, 255, 255);
     min-height: 55px;
-    border-bottom: 4px solid rgb(0, 0, 0, 0.8);
+    border-bottom: 5px solid rgb(0, 0, 0, 0.8);
 }
 .header {
     font-size: 30px;
