@@ -201,20 +201,4 @@ p{
         display: flex;
         justify-content:space-evenly;
     }
-<<<<<<< HEAD
 }
-=======
-}
-@media screen and (max-width:757px){
-    .About {
-        flex-direction: column-reverse;
-    }
-    .man-icon {
-        margin: 50px;
-        width: 50%;
-    }
-    .projects {
-        margin-top: 100px;
-    }
-}
->>>>>>> 2137bf092dc9298959348f86b87ea1cc806286d6
