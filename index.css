@@ -62,15 +62,22 @@ p{
 
 /* Projects */
 
-.projects {
-    height: 100vh;
+#projects {
+    height: 100%;
     background-color: blue;
-    display: grid;
-    grid-row: 1fr;
-    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
 }
 .p1 {
     background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+#text_center {
+    text-align: center;
+    background-color: blue;
+}
+h2 {
+    color: white;
+    font-size: 30px;
 }
 .card {
     max-width: 200px;
@@ -78,8 +85,7 @@ p{
     color: white;
     border-radius:20px 20px;
     margin: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.605);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.495);
+    border: 2px solid rgb(255, 255, 255);
 }
 .card_text {
     color: white;
@@ -98,7 +104,20 @@ p{
 }
 .skills {
     height: 100vh;
-    background-color: black;
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill {
+    border-left: 7px rgb(249, 249, 249) solid ;
+    width: 400px;
+    margin: 10px;
+    background-image: linear-gradient(rgb(101, 159, 212) 0%,rgba(9, 70, 201, 0.888) 50%,rgb(53, 37, 141) 100%);
+    height: 70px;
+    display: grid;
+    place-content: center;
 }
 /*
 .projects {
@@ -183,11 +202,7 @@ p{
         flex-direction: column-reverse;
     }
     .profile_photo{
-        margin: 50px;
         width: 50%;
-    }
-    .projects {
-        margin-top: 100px;
     }
 }
 @media screen and (max-width:456px){
