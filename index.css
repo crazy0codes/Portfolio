@@ -1,14 +1,20 @@
 /* CSS file of profile */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Merienda', cursive;
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --white : white;
 }
 body {
     background-color: rgb(255, 255, 255);
+    scroll-behavior:smooth;
 }
 nav {
     top: 0;
@@ -61,12 +67,83 @@ p{
     margin: 20px;
 }
 
-#projects{
-    min-height: 100vh;
+
+#projects-section{
+    padding: 40px;
     background-color: black;
-    
 }
 
+.projects-container{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.title {
+    color: red;
+}
+
+#project-and-details {
+    display: flex;
+    padding:20px;
+    justify-content: space-evenly;
+    position: relative;
+    max-width: max-content;
+    column-gap: 200px;
+    padding: 60px;
+}
+
+#projects{
+    list-style: none;
+    height: min-content;
+}
+
+.project {
+    padding: 5px;
+    color: var(--white);
+
+}
+.project:hover {
+    cursor: pointer;
+    transition-duration:2s;
+}
+
+.project:hover::before {
+    content: '> ';
+    color: red;
+    font-weight: 900;
+}
+
+
+#project-details {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    color: var(--white);
+}
+
+.about-project {
+    color: var(--white);
+    font-size: 13px;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: var(--white);
+}
+.project-heading {
+    display: block;
+    margin-left: 20px;
+    color: var(--white);
+}
+.project-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    display: block;
+}
 ::-webkit-scrollbar {
     height: 0px;
 }
@@ -76,7 +153,6 @@ p{
     border-radius: 20px;
     height: 30px;
 }
-
 @media screen and (max-width:757px){
     .about {
         flex-direction: column-reverse;
